@@ -2,9 +2,9 @@
 
 关于路径：/usr/lib这是基本上一个标准路径的写法
 pwd 指令，打印当前的路径
-![](<./mypicture/Pasted image 20260218164047.png>)
+![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260218164047.png>)
 .是当级目录，..是上级目录
-![[Pasted image 20260218212250.png]]
+![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260218212250.png>)
 touch 创建一个文件
 ls -a 显示全部的信息
 rm 删除一个文件
@@ -18,7 +18,7 @@ find 位置  文件名字
 ls的用法：
 ls -d   输出当前文件夹的名字       
 ls -l    长格式，显示权限，大小，修改日期，
-例：![[Pasted image 20260220105835.png]]
+例：![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260220105835.png>)
 d表示这是目录或者是文件夹，-表示这个是文件，普通文件，-r w x表示的是这个文件的读写权限，2表示路径有两个，1个路径。目录一般是两个，文件一般只有1个
 ls -c   根据文件被修改的时间排序
 ls -b  将文件名中奇怪的符号表示出来，比如说空格和换行符
@@ -28,7 +28,7 @@ ls -s  是文件的物理占用空间
 都是创造链接的方式，<font color="#938953">区别在于ln是硬链接，只能用于文件</font>，<font color="#c0504d">而ln -s是软连接，可以用于目录</font>。
 如果用ln -s创建的相对路径，移动到其他目录下面就无法使用了，而绝对路径就还可以例子如下
                       **<font color="#c0504d">相对路径是相对于软链接的路径</font>**
-![[Pasted image 20260220191941.png]]
+![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260220191941.png>)
 File会告诉你文件的类型
 
 man会告诉你命令的使用方式，是一个离线手册,space空格键向下翻页，/ 输入关键词帮你查找，n表示下一个，N是上一个，q退出，b向上翻页。
@@ -75,7 +75,7 @@ grep 关键字 文件名    表示从文件中抓取与关键字有关的信息
 
 
 如果你想终止一个程序，请用kill PID number，用 ps -ef 查看
-![[Pasted image 20260224133000.png]]
+![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260224133000.png>)
 <font color="#4bacc6">我们可以使用crl+z去暂停程序的运行。</font>
 <font color="#4bacc6">fg可以重新运行被暂停的程序。</font>
 <font color="#4bacc6">bg是在后台去运行程序。</font>
@@ -89,9 +89,9 @@ grep 关键字 文件名    表示从文件中抓取与关键字有关的信息
 如果当你的命令错误以后，就会把错误信息写在 ?的变量里，用echo $?查看
 
 ## Untangling Users
-![[Pasted image 20260224163733.png]]
+![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260224163733.png>)
 这个是在/etc/shadow里的存储用户的密码（一般包含root在第一个，你的正常的在最后一个，就像在上面的一样。），和用户名。
 
 1是用户名，2是密码，哈希加密国，分成三段：
-用$分割，第一个1是用的算法，![[Pasted image 20260224164731.png]]
+用$分割，第一个1是用的算法，![sorry for the inconvenience!It's the icon here!](<./mypicture/Pasted image 20260224164731.png>)
 第二个是盐值，即使密码完全相同，这个随机的盐值也会不同。第三个是原始密码加上盐值并经行哈希算法的结果，不可逆，不可推断出。
