@@ -2,7 +2,7 @@
 
 关于路径：/usr/lib这是基本上一个标准路径的写法
 pwd 指令，打印当前的路径
-![](./mypicture/Pasted image 20260218164047.png)
+![](<./mypicture/Pasted image 20260218164047.png>)
 .是当级目录，..是上级目录
 ![[Pasted image 20260218212250.png]]
 touch 创建一个文件
