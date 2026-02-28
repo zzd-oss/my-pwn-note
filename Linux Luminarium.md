@@ -8,7 +8,7 @@ pwd 指令，打印当前的路径
 touch 创建一个文件
 ls -a 显示全部的信息
 rm 删除一个文件
-mv 移动一个文件
+mv 移动一个文件，也可以重命名一个文件。
 
 find几乎可以找到任意一个文件
 语法如下：
@@ -111,4 +111,15 @@ Subject Object right : 主体，客体，权力：
 screen 可以重新开启一个shell，和之前的可能会略有不同，
 screen的作用：当你正在运行非常耗时的命令时，或者处于网络易断的情况下，你可以在screen的情况下运行，重新连接以后进程不会终端。
 可以通过ctr A 再接着按 D 中断，再screen -r连接
-exit可以退出一个screen。
+exit可以退出一个screen。ctr A +0反到第零页，一次类推
+PATH是一个变量，里面存放的是路径值。如下图。
+![alt text](./mypicture/image1.png)
+这就是为什么你输入ls，而不是输入存储ls的地址来运行ls这个程序。
+PATH如果要添加路径，可以使用PATH=$PATH:new directory
+
+同时注意：./bashrc是每个用户启动时默认执行的！
+
+注意进程炸弹!
+
+还有yes会不断生成y你可以重定向到文件直到你的磁盘里直到磁盘满了。记住，一定要记得清除你的磁盘。
+read 
